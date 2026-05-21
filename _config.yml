@@ -1,11 +1,11 @@
-title: John Doe # your name (or website title) here
+title: Hue Tang # your name (or website title) here
 logo: "/images/logo.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  First description 
+  Aspiring Data Analyst and Computer Science graduate with experience in Python, SQL, Excel, Power BI and Tableau.
   <br><br>
-  Second description 
+  Currently building projects focused on data cleaning, exploratory analysis and insight reporting as I work towards an entry-level role in data analytics.
   <br><br>
-  <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a> 
+  <a href="https://www.linkedin.com/in/hue-mai-tang-450202222/">View My LinkedIn Profile</a> 
   
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
