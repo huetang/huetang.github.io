@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="/assets/css/style.css">
 <div class="chart-bg">
   <span></span>
   <span></span>
@@ -39,10 +40,11 @@
 - [Project 5 Title](http://example.com/)
 
 ---
-</div>
+
 
 
 
 ---
 <p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
 <!-- Remove above link if you don't want to attibute -->
+</div>

@@ -1,0 +1,54 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+    background: #0f172a;
+    color: white;
+    overflow-x: hidden;
+}
+
+.chart-bg {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 12px;
+    opacity: 0.08;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.chart-bg span {
+    display: inline-block;
+    width: 30px;
+    background: #38bdf8;
+    border-radius: 6px 6px 0 0;
+    transform-origin: bottom center;
+    animation: bars 2s ease-in-out infinite;
+}
+
+.chart-bg span:nth-child(1) { height: 120px; animation-delay: 0s; }
+.chart-bg span:nth-child(2) { height: 200px; animation-delay: 0.2s; }
+.chart-bg span:nth-child(3) { height: 160px; animation-delay: 0.4s; }
+.chart-bg span:nth-child(4) { height: 280px; animation-delay: 0.6s; }
+.chart-bg span:nth-child(5) { height: 180px; animation-delay: 0.8s; }
+.chart-bg span:nth-child(6) { height: 240px; animation-delay: 1s; }
+.chart-bg span:nth-child(7) { height: 140px; animation-delay: 1.2s; }
+.chart-bg span:nth-child(8) { height: 220px; animation-delay: 1.4s; }
+
+@keyframes bars {
+    0%, 100% {
+        transform: scaleY(0.6);
+    }
+    50% {
+        transform: scaleY(1.2);
+    }
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
