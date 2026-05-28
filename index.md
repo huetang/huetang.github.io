@@ -1,3 +1,16 @@
+<div class="chart-bg">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<div class="content">
+
 ## Portfolio
 
 ---
@@ -26,7 +39,7 @@
 - [Project 5 Title](http://example.com/)
 
 ---
-
+</div>
 
 
 
