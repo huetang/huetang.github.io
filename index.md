@@ -32,7 +32,6 @@
     <span>H</span>
   </div>
 
-</div>
 
 <div class="content">
 

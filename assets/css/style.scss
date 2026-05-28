@@ -1,43 +1,60 @@
 .chart-wrapper {
     position: fixed;
-    inset: 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 10px;
-    padding: 60px;
+    bottom: 20px;
+    right: 20px;
+
+    width: 360px;
+    height: 260px;
+
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 1fr 40px;
+
+    background: transparent;
 }
 
-/* LEFT Y-AXIS */
+
 .y-axis {
-    position: absolute;
-    left: 20px;
-    bottom: 60px;
+    grid-column: 1;
+    grid-row: 1;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 300px;
-    font-size: 12px;
-    opacity: 0.5;
+
+    font-size: 11px;
+    opacity: 0.6;
 }
 
-/* X-AXIS */
+
 .x-axis {
-    position: absolute;
-    bottom: 20px;
+    grid-column: 2;
+    grid-row: 2;
+
     display: flex;
-    gap: 20px;
-    font-size: 12px;
-    opacity: 0.5;
+    justify-content: space-between;
+
+    font-size: 11px;
+    opacity: 0.6;
 }
 
-/* BARS */
+
 .chart-bg {
+    grid-column: 2;
+    grid-row: 1;
+
     display: flex;
     align-items: flex-end;
-    gap: 14px;
-    height: 300px;
+    justify-content: space-between;
+
+    height: 100%;
+
+    border-left: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+
+    padding-bottom: 2px;
 }
+
 
 .chart-bg span {
     width: 28px;
@@ -47,7 +64,7 @@
     animation: bars 1.6s ease-in-out infinite;
 }
 
-/* keep your bar heights */
+/* Fixed data values */
 .chart-bg span:nth-child(1) { height: 80px; }
 .chart-bg span:nth-child(2) { height: 140px; }
 .chart-bg span:nth-child(3) { height: 110px; }
@@ -58,7 +75,7 @@
 .chart-bg span:nth-child(8) { height: 180px; }
 
 @keyframes bars {
-    0% { transform: scaleY(0.4); }
-    50% { transform: scaleY(1.2); }
-    100% { transform: scaleY(0.6); }
+    0% { opacity: 0.75; }
+    50% { opacity: 1; }
+    100% { opacity: 0.85; }
 }
